@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+// ユーティリティクラス
+
+@use '../../foundation/global/_global' as *;
+
+// 要素非表示
+.u-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+// width
+// @for $i from 0 through 20 {
+//   .u-w#{$i * 20} {
+//     width: #{$i * 20}px !important;
+//   }
+// }

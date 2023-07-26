@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+// 状態に関するスタイル
+
+@use '../../foundation/global/_global' as *;
+
+.is-md-show {
+  display: none;
+  @include max-screen($breackpoint_md) {
+    display: block;
+  }
+}
+
+.is-md-hide {
+  @include max-screen($breackpoint_md) {
+    display: none;
+  }
+}

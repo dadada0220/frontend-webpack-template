@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+@use 'node_modules/destyle.css/destyle.css'; // リセットCSS
+@use 'foundation/reset-add';
+@use 'foundation/reset-form';
+@use 'foundation/base';
+
+@use 'layout/inner';
+@use 'layout/page/home';
+
+@use 'object/component/button';
+
+@use 'object/project/header';
+@use 'object/project/footer';
+@use 'object/project/post-style';
+
+@use 'object/utility/utility';
+@use 'object/utility/state';
+@use 'object/utility/zindex';
