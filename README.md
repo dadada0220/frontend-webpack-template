@@ -6,12 +6,12 @@
 
 ## 機能一覧
 
+- Webpack
+  - Sass（SCSS記法）とECMAScript（JS）のコンパイル
 - 構文チェック&自動整形
   - HTML: `Markuplint`
   - CSS: `Stylelint`（CSSとSCSS記法のみ対応）
   - JavaScript: `ESLint`
-- Webpack
-  - Sass（SCSS記法）とECMAScript（JS）のコンパイル
   - SCSSファイルに記述したCSSプロパティ順の自動ソート
 
 ---
