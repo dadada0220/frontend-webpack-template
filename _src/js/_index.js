@@ -1,5 +1,6 @@
 // Funtion
 import adjustViewport from './function/adjustViewport'
+import debounce from './function/debounce';
 
 // Module
 import SmoothScroll from './module/SmoothScroll';
@@ -14,9 +15,16 @@ const init = () => {
     smoothScroll.init();
   })();
 
+  (() => {
+    const debouncedFunction = debounce(() => {
+      adjustViewport();
+    });
+    window.addEventListener('resize', debouncedFunction, false);
+    adjustViewport();
+  })();
+
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  adjustViewport();
   init();
 });
